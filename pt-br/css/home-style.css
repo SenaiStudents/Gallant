@@ -1,3 +1,26 @@
-body {
-    
+.navbar {
+    height: 140px;
+}
+.navbar-brand {
+    font-family: Gloock;
+    font-size: 48pt;
+    color: #fff;
+}
+.navbar-div1 {
+    width: 30vw;
+    position: absolute;
+    left: 0;
+    margin-top: -60px;
+}
+.navbar-div2 {
+    width: 40vw;
+    position: absolute;
+    text-align: center;
+    margin: 0 30vw 0 30vw;
+}
+.navbar-div3 {
+    width: 30vw;
+    position: absolute;
+    right: 0;
+    margin-top: -60px;
 }
