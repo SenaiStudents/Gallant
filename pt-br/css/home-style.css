@@ -58,13 +58,18 @@ body {
 }
 /* Navbar End */
 /* Home bg */
-.home-bg img {
+.home-bg-img {
     position: absolute;
-    width: 100vw;
-    height: auto;
     z-index: -1;
-    bottom: 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    bottom: 0;
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 2371px) {
+    .home-bg-img {
+        height: 100%;
+    }
 }
 /* Home bg END */
 /* Home icon */
