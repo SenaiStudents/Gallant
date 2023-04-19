@@ -86,3 +86,9 @@ body {
     100%    {margin-bottom: 3vh;}
 }
 /* Home icon END */
+/* Page content */
+.page-container {
+    margin-top: 100vh;
+    height: 5000px;
+}
+/* Page content END */
