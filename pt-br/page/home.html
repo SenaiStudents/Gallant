@@ -1,88 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gallant é o nome principal em artigos de luxo. Tem a sua sede em Garça, Brasil. Criou a primeira marca global do mundo em artigos de luxo.">
-    <meta name="keywords" content="Gallant,Luxo,Artigos,Joia,Relógio,Ana,Gabriel,Maria,Matheus">
-    <meta name="author" content="Gallant Co.">
-    <title>Home - Gallant</title>
-    <!-- Link Fontes -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloock">
-    <!-- Link Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <!-- Link Css & Favicon -->
-    <link rel="stylesheet" href="/pt-br/css/home-style.css">
-    <link rel="shortcut icon" href="/pt-br/assets/img/whiteTiaraIcon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gallant é o nome principal em artigos de luxo. Tem a sua sede em Garça, Brasil. Criou a primeira marca global do mundo em artigos de luxo.">
+  <meta name="keywords" content="Gallant,Luxo,Artigos,Joia,Relógio,Ana,Gabriel,Maria,Matheus">
+  <meta name="author" content="Gallant Co.">
+  <title>Home · Gallant</title>
+   <!-- Link Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+   <!-- Link Style CSS -->
+   <link rel="stylesheet" href="../css/home-style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid p-0">
-            <div class="navbar-div2"> <!-- Navbar Middle -->
-                <a class="navbar-brand justify-content-center text-light" href="#">GALLANT</a>
-            </div>
-          <button class="navbar-toggler bg-white opacity-50 ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <div class="navbar-div1"> <!-- Navbar Left -->
-                    <div class="nav-display-flex">
-                        <li class="nav-item">
-                            <a class="nav-link" href="jewerly.html">Joias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="watch.html">Relógios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Sobre</a>
-                        </li>
-                    </div>
-                </div>
-                <div class="navbar-div3"> <!-- Navbar Right -->
-                    <div class="nav-display-flex float-end">
-                          <li class="nav-item">
-                            <a class="nav-link" href="accout.html">Conta</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Carrinho</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Menu
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Algo</a></li>
-                              <li><a class="dropdown-item" href="#">Algo</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">v1.0</a></li>
-                            </ul>
-                          </li>
-                    </div>
-                </div>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <!-- Navbar END -->
-    <!-- Home -->
-    <div>
-      <img src="/pt-br/assets/img/home-jewerly-bg.jpg" class="home-bg-img" alt="Fundo com imagem de joias.">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-tertiary " data-bs-theme="dark">
+    <div class="container-fluid row">
+      <div class="nav-div col-2 offset-md-2">
+        <a class="navbar-brand" href="#">GALLANT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse nav-div col-4" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Joias</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#">Relógios</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse nav-div col-2 offset-md-2" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../assets/img/carrinho.svg" alt="Carrinho icone" class="nav-icon"></a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../assets/img/conta.svg" alt="Conta icone" class="nav-icon"></a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../assets/img/menu.svg" alt="Menu icone" class="nav-icon"></a>
+          </li> 
+        </ul>
+      </div>
     </div>
-    <ion-icon class="down-arrow-icon opacity-75" name="chevron-down-outline"></ion-icon>
-    <!-- Home END -->
-    <!-- Page content -->
-    <div class="container-md page-container">
-      <p>Os relógios Gallant são produzidos segundo métodos que levam meticulosamente em conta cada detalhe.
-~SGL Labs, 2023</p>
-    </div>
-    <!-- Page content End -->
-    <!-- Link Ion Icons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- Link Bootstrap JS --> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </nav>
+  <!-- Link Icon Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- Link Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>
