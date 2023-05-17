@@ -76,6 +76,14 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+@media screen and (max-width: 992px) {
+    .navbar .container-fluid {
+        display: inline;
+    }
+    .navbar-brand {
+        margin-left: 43vw;
+    }
+}
 /* Header */
 header {
     background: url(../assets/img/noise-overlay.png) fixed center #070707;
@@ -101,10 +109,62 @@ header h2 {
     font-size: 16pt
 }
 /* Jewelry */
-.jewerly-section {
+.jewelry-section {
     background-color: #070707;
     width: 100%;
     height: 1000px;
     position: absolute;
     top: 100svh;
+    display: flex;
+    justify-content: center;
+    color: #FFF8E3;
+}
+.jewelry-container-div {
+    width: 60%;
+    margin-left: 0;
+}
+.jewelry-container {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+    height: 400px;
+    gap: 10px;
+    margin-top: 5%;
+}
+.jewelry-grid-1 {
+    background: url(../assets/img/jewelry1.png) no-repeat center;
+    background-size: cover;
+    grid-area: 1 / 1 / 3 / 6;
+}
+.jewelry-grid-2 {
+    background: url(../assets/img/jewelry2.png) no-repeat center;
+    background-size: cover;
+    grid-area: 1 / 6 / 1 / 9;
+}
+.jewelry-grid-3 {
+    background: url(../assets/img/jewelry3.png) no-repeat center;
+    background-size: cover;
+    grid-area: 2 / 6 / 2 / 9;
+}
+.jewelry-container-text {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.jewelry-item-text-1 {
+    width: 140%;
+}
+.jewelry-item-text-2 {
+    text-align: justify;
+}
+/* Viewport Anim */
+[data-inviewport="fade-in-left"] {
+    transition: 2s;
+    margin-right: -400px;
+    opacity: 0;
+}
+[data-inviewport="fade-in-left"].is-inViewport {
+    margin-right: 0px;
+    opacity: 1;
 }
