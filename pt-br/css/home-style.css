@@ -14,12 +14,13 @@
 /* HTML */
 body {
     position: relative;
-    overflow-x: hidden;
+    overflow-x: none;
     overflow-y: overlay;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #FFF8E3;
+    background-color: #070707;
+    width: 100%;
 }
 /* Scrollbar */
 *::-webkit-scrollbar {
@@ -111,9 +112,8 @@ header h2 {
 .jewelry-section {
     background-color: #070707;
     width: 100%;
-    height: 1200px;
     position: absolute;
-    top: 100svh;
+    margin-top: 100svh;
     display: flex;
     justify-content: center;
     color: #FFF8E3;
@@ -121,7 +121,7 @@ header h2 {
 .jewelry-container-div {
     width: 60%;
     margin-left: 0;
-    margin-top: 15%;
+    margin-top: 15svh;
 }
 .jewelry-container {
     display: grid;
@@ -163,13 +163,22 @@ header h2 {
     line-height: 1.85;
     opacity: 0.9;
 }
+@media screen and (max-width: 815px) {
+    .jewelry-item-text-1 {
+        width: 100%;
+        text-justify: auto;
+    }
+    .jewelry-container-text {
+        flex-direction: column;
+    }
+}
 /* Watch */
 .watch-section {
     background: url(../assets/img/noise-overlay-white.png) center #070707;
     width: 100%;
-    height: 1000px;
+    height: 900px;
     position: absolute;
-    top: 260svh;
+    margin-top: 2050px;
     display: flex;
     justify-content: center;
     color: #FFF8E3;
@@ -223,6 +232,17 @@ header h2 {
 .watch-h1-text-2 {
     text-align: right;
 }
+@media screen and (max-width: 815px) {
+    .watch-item-text-2 {
+        width: 100%;
+    }
+    .watch-h1-text-2 {
+        text-align: start;
+    }
+    .watch-container-watch {
+        flex-direction: column-reverse;
+    }
+}
 /* Text Carousel */
 :root {
     --size: clamp(10rem, 1rem + 40vmin, 30rem);
@@ -233,7 +253,7 @@ header h2 {
 }
 .link-carousel {
     position: absolute;
-    top: 340svh;
+    margin-top: 2650px;
     display: flex;
     width: 100%;
 }
@@ -291,13 +311,29 @@ header h2 {
     vertical-align: 16px;
     padding-right: 8px;
 }
+@media screen and (max-width: 640px) {
+    .link-carousel {
+        margin-top: 2700px;
+}
+}
+@media screen and (max-width: 515px) {
+    .link-carousel {
+        margin-top: 2750px;
+}
+}
+@media screen and (max-width: 385px) {
+    .link-carousel {
+        margin-top: 2800px;
+        margin-bottom: 100px;
+}
+}
 /* Footer */
 .footer-section {
     background-color: #0F0F0F;
     height: 400px;
     width: 100%;
     position: absolute;
-    top: 380svh;
+    margin-top: 2850px;
     display: flex;
     justify-content: center;
     color: #FFF8E3;
@@ -351,6 +387,19 @@ header h2 {
 .footer-backtop-icon {
     color: #FFF8E3;
 }
+@media screen and (max-width: 815px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+    }
+}
+@media screen and (max-width: 621px) {
+    .watch-p-text-1 {
+        display: none;
+    }
+}
 /* Viewport Anim */
 [data-inviewport="fade-in"] {
     transition: 1.5s;
@@ -361,7 +410,7 @@ header h2 {
 }
 [data-inviewport="fade-in-left"] {
     transition: 1.5s;
-    margin-right: -400px;
+    margin-right: -40vw;
     opacity: 0;
 }
 [data-inviewport="fade-in-left"].is-inViewport {
@@ -370,7 +419,7 @@ header h2 {
 }
 [data-inviewport="fade-in-right"] {
     transition: 1.5s;
-    margin-left: -400px;
+    margin-left: -40vw;
     opacity: 0;
 }
 [data-inviewport="fade-in-right"].is-inViewport {
