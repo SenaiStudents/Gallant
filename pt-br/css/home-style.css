@@ -19,8 +19,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background-color: #070707; */
-    background-color: #aa1616;
+    background-color: #070707;
     width: 100%;
 }
 /* Scrollbar */
@@ -373,7 +372,7 @@ header h2 {
 /* Footer */
 .footer-section {
     background-color: #0F0F0F;
-    height: 336px;
+    min-height: 336px;
     width: 100%;
     position: absolute;
     margin-top: calc(100svh + 1800px);
@@ -388,10 +387,14 @@ header h2 {
 }
 .footer-div {
     width: 21vw;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
 }
 .footer-ul {
     list-style: none;
     margin-top: 12px;
+    padding-left: 0;
 }
 .footer-li {
     margin-top: 2px;
@@ -432,18 +435,17 @@ header h2 {
 }
 @media screen and (max-width: 815px) {
     .footer-container {
+        margin-top: 12px;
+        margin-bottom: 12px;
         display: grid;
         grid-template-columns: repeat(2, 40vw);
         grid-template-rows: repeat(2, auto);
-        justify-items: stretch;
-    }
-    .footer-acessibilidade {
-        display: none;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 561px) {
     .footer-section {
-        margin-top: calc(100svh + 1825px);
+        margin-top: calc(110svh + 1825px);
     }
 }
 /* Viewport Anim */
@@ -472,3 +474,19 @@ header h2 {
     margin-left: 0px;
     opacity: 1;
 }
+
+/* Jewelry */
+
+
+
+
+
+
+/* Watch */
+
+
+
+
+
+
+/* About */
