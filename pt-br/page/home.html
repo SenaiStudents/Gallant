@@ -45,15 +45,15 @@
       <div class="collapse navbar-collapse nav-div col-2" id="navbarSupportedContent">
         <ul class="navbar-nav nav-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#" draggable="false"> <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA overlay window -->
+            <button class="nav-link" onclick="cart_click()">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="none" class="nav-icon">
-                <path d="M20.3725 19.0086C21.2895 19.0086 22.033 18.4039 22.033 17.658C22.033 16.912 21.2895 16.3073 20.3725 16.3073C19.4554 16.3073 18.712 16.912 18.712 17.658C18.712 18.4039 19.4554 19.0086 20.3725 19.0086Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M9.30247 19.0086C10.2195 19.0086 10.963 18.4039 10.963 17.658C10.963 16.912 10.2195 16.3073 9.30247 16.3073C8.3854 16.3073 7.64197 16.912 7.64197 17.658C7.64197 18.4039 8.3854 19.0086 9.30247 19.0086Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4.321 2.80086H23.14L20.926 12.7056H6.535L4.321 2.80086ZM4.321 2.80086C4.1365 2.20057 3.214 1 1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M20.926 12.7056H6.53503H4.57649C2.60126 12.7056 1.55353 13.409 1.55353 14.5064C1.55353 15.6039 2.60126 16.3073 4.57649 16.3073H20.3725" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20.3725 19.0086C21.2895 19.0086 22.033 18.4039 22.033 17.658C22.033 16.912 21.2895 16.3073 20.3725 16.3073C19.4554 16.3073 18.712 16.912 18.712 17.658C18.712 18.4039 19.4554 19.0086 20.3725 19.0086Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.30247 19.0086C10.2195 19.0086 10.963 18.4039 10.963 17.658C10.963 16.912 10.2195 16.3073 9.30247 16.3073C8.3854 16.3073 7.64197 16.912 7.64197 17.658C7.64197 18.4039 8.3854 19.0086 9.30247 19.0086Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.321 2.80086H23.14L20.926 12.7056H6.535L4.321 2.80086ZM4.321 2.80086C4.1365 2.20057 3.214 1 1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20.926 12.7056H6.53503H4.57649C2.60126 12.7056 1.55353 13.409 1.55353 14.5064C1.55353 15.6039 2.60126 16.3073 4.57649 16.3073H20.3725" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-            </a>
-          </li> 
+            </button>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="accout.html" draggable="false">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="nav-icon">
@@ -82,30 +82,30 @@
         <div class="offcanvas-body offcanvas-body-div">
           <ul class="navbar-nav nav-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html" draggable="false">Home</a>
+              <a class="nav-link active border-bottom-li" aria-current="page" href="home.html" draggable="false">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="jewerly.html" draggable="false">Joias</a>
+              <a class="nav-link border-bottom-li" href="jewerly.html" draggable="false">Joias</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="watch.html" draggable="false">Relógios</a>
+              <a class="nav-link border-bottom-li" href="watch.html" draggable="false">Relógios</a>
             </li> 
             <li class="nav-item">
               <a class="nav-link" href="about.html" draggable="false">Sobre</a>
             </li>
           </ul>
-          <ul class="navbar-nav nav-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#" draggable="false"> <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA overlay window -->
+          <ul class="nav-offcanvas-ul nav-nav">
+            <li class="nav-item nav-offcanvas-li border-right">
+              <button class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="none" class="nav-icon">
-                  <path d="M20.3725 19.0086C21.2895 19.0086 22.033 18.4039 22.033 17.658C22.033 16.912 21.2895 16.3073 20.3725 16.3073C19.4554 16.3073 18.712 16.912 18.712 17.658C18.712 18.4039 19.4554 19.0086 20.3725 19.0086Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9.30247 19.0086C10.2195 19.0086 10.963 18.4039 10.963 17.658C10.963 16.912 10.2195 16.3073 9.30247 16.3073C8.3854 16.3073 7.64197 16.912 7.64197 17.658C7.64197 18.4039 8.3854 19.0086 9.30247 19.0086Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M4.321 2.80086H23.14L20.926 12.7056H6.535L4.321 2.80086ZM4.321 2.80086C4.1365 2.20057 3.214 1 1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M20.926 12.7056H6.53503H4.57649C2.60126 12.7056 1.55353 13.409 1.55353 14.5064C1.55353 15.6039 2.60126 16.3073 4.57649 16.3073H20.3725" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.3725 19.0086C21.2895 19.0086 22.033 18.4039 22.033 17.658C22.033 16.912 21.2895 16.3073 20.3725 16.3073C19.4554 16.3073 18.712 16.912 18.712 17.658C18.712 18.4039 19.4554 19.0086 20.3725 19.0086Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.30247 19.0086C10.2195 19.0086 10.963 18.4039 10.963 17.658C10.963 16.912 10.2195 16.3073 9.30247 16.3073C8.3854 16.3073 7.64197 16.912 7.64197 17.658C7.64197 18.4039 8.3854 19.0086 9.30247 19.0086Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.321 2.80086H23.14L20.926 12.7056H6.535L4.321 2.80086ZM4.321 2.80086C4.1365 2.20057 3.214 1 1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.926 12.7056H6.53503H4.57649C2.60126 12.7056 1.55353 13.409 1.55353 14.5064C1.55353 15.6039 2.60126 16.3073 4.57649 16.3073H20.3725" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-              </a>
+              </button>
             </li> 
-            <li class="nav-item">
+            <li class="nav-item nav-offcanvas-li border-right">
               <a class="nav-link" href="accout.html" draggable="false">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="nav-icon">
                   <path d="M1 18.8947V17.8272C1 13.6999 5.11339 10.3541 10.1875 10.3541C15.2616 10.3541 19.375 13.6999 19.375 17.8272V18.8947" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -114,7 +114,7 @@
               </a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="#" draggable="false"> <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA dropdown || off canvas -->
+              <a class="nav-link nav-offcanvas-li" href="#" draggable="false"> <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA dropdown || off canvas -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="19" viewBox="0 0 28 19" fill="none" class="nav-icon">
                   <path d="M1 1.62677H26.8543" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M1 9.80505H26.8543" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -127,6 +127,74 @@
       </div>
     </div>
   </nav>
+  <div class="container-cart">
+    <div class="shopping-cart" id="shopping-cart">
+      <div class="shopping-cart-header">
+        <div class="shopping-cart-total">
+          <span class="">Total:</span>
+          <span class="">$2,229.97</span>
+        </div>
+      </div>
+      <ul class="shopping-cart-items">
+        <li class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
+          <span class="item-name">Sony DSC-RX100M III</span>
+          <span class="item-price">$849.99</span>
+          <span class="item-quantity">Quantity: 01</span>
+        </li>
+  
+        <li class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
+          <span class="item-name">KS Automatic Mechanic...</span>
+          <span class="item-price">$1,249.99</span>
+          <span class="item-quantity">Quantity: 02</span>
+        </li>
+  
+        <li class="clearfix">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
+          <span class="item-name">Kindle, 6" Glare-Free To...</span>
+          <span class="item-price">$129.99</span>
+          <span class="item-quantity">Quantity: 01</span>
+        </li>
+      </ul>
+  
+      <a href="#" class="button">Checkout</a>
+    </div> <!--end shopping-cart -->
+  </div>
+  <div class="offcanvas offcanvas-start shopping-cart-offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header shopping-cart-header">
+        <div class="shopping-cart-total">
+          <span class="">Total:</span>
+          <span class="">$2,229.97</span>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="shopping-cart-items">
+          <li class="clearfix">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
+            <span class="item-name">Sony DSC-RX100M III</span>
+            <span class="item-price">$849.99</span>
+            <span class="item-quantity">Quantity: 01</span>
+          </li>
+    
+          <li class="clearfix">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
+            <span class="item-name">KS Automatic Mechanic...</span>
+            <span class="item-price">$1,249.99</span>
+            <span class="item-quantity">Quantity: 02</span>
+          </li>
+    
+          <li class="clearfix">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
+            <span class="item-name">Kindle, 6" Glare-Free To...</span>
+            <span class="item-price">$129.99</span>
+            <span class="item-quantity">Quantity: 01</span>
+          </li>
+        </ul>
+        <a href="#" class="button">Checkout</a>
+    </div> <!--end shopping-cart -->
+  </div>
   <header class="header">
     <div class="header-container">
       <h1 id="gallant-home">gallant</h1>
