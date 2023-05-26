@@ -14,10 +14,19 @@ const inViewport = (entries, observer) => {
     });
   };
   
-  const Obs = new IntersectionObserver(inViewport);
-  const obsOptions = {};
+const Obs = new IntersectionObserver(inViewport);
+const obsOptions = {};
   
-  const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
-  ELs_inViewport.forEach(EL => {
-    Obs.observe(EL, obsOptions);
-  });
+const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
+ELs_inViewport.forEach(EL => {
+  Obs.observe(EL, obsOptions);
+});
+
+function cart_click() {
+  var cart = document.getElementById("shopping-cart");
+  if (cart.style.display == "block") {
+    cart.style.display = "none";
+  } else {
+    cart.style.display = "block";
+  }
+}
