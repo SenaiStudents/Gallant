@@ -14,7 +14,7 @@
 /* HTML */
 body {
     position: relative;
-    overflow-x: none;
+    overflow-x: hidden;
     overflow-y: overlay;
     padding: 0;
     margin: 0;
