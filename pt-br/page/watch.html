@@ -17,7 +17,7 @@
   <script defer src="../javascript/home-script.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-tertiary navjs" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-tertiary nav-dark-theme nav-position" data-bs-theme="dark">
     <div class="container-fluid no-flex-lg">
       <div class="collapse navbar-collapse nav-div-empty col-2"></div>
       <div class="nav-div nav-div-brand col-2">
@@ -63,7 +63,7 @@
             </a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link" href="#" draggable="false"> <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA dropdown || off canvas -->
+            <a class="nav-link" href="#" draggable="false"> <!-- dropdown || off canvas -->
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="19" viewBox="0 0 28 19" fill="none" class="nav-icon">
                 <path d="M1 1.62677H26.8543" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M1 9.80505H26.8543" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -88,10 +88,10 @@
               <a class="nav-link border-bottom-li" href="jewerly.html" draggable="false">Joias</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link active border-bottom-li" aria-current="page" href="watch.html" draggable="false">Relógios</a>
+              <a class="nav-link border-bottom-li active" href="watch.html" draggable="false">Relógios</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="about.html" draggable="false">Sobre</a>
+              <a class="nav-link" href="about.html" aria-current="page" draggable="false">Sobre</a>
             </li>
           </ul>
           <ul class="nav-offcanvas-ul nav-nav">
@@ -114,7 +114,7 @@
               </a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link nav-offcanvas-li" href="#" draggable="false"> <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA dropdown || off canvas -->
+              <a class="nav-link nav-offcanvas-li" href="#" draggable="false"> <!-- dropdown || off canvas -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="19" viewBox="0 0 28 19" fill="none" class="nav-icon">
                   <path d="M1 1.62677H26.8543" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M1 9.80505H26.8543" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -132,28 +132,28 @@
       <div class="shopping-cart-header">
         <div class="shopping-cart-total">
           <span class="">Total:</span>
-          <span class="">$2,229.97</span>
+          <span class="">R$ 5.776,00</span>
         </div>
       </div>
       <ul class="shopping-cart-items">
         <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
-          <span class="item-name">Sony DSC-RX100M III</span>
-          <span class="item-price">$849.99</span>
+          <img src="https://lojavivara.vtexassets.com/arquivos/ids/305579/Anel-Prata-e-Quartzo-Negro-m4960344_set.jpg?v=1772757969" alt="item1" class="cart-item"/>
+          <span class="item-name">Anel Prata e Quartzo Negro</span>
+          <span class="item-price">R$ 750,00</span>
           <span class="item-quantity">Quantity: 01</span>
         </li>
   
         <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
-          <span class="item-name">KS Automatic Mechanic...</span>
-          <span class="item-price">$1,249.99</span>
+          <img src="https://pandorajoias.vtexassets.com/arquivos/ids/187856-800-auto?v=637789027673070000&width=800&height=auto&aspect=true" alt="item1" class="cart-item"/>
+          <span class="item-name">Coracao E Asas Shine</span>
+          <span class="item-price">R$ 4.336,00</span>
           <span class="item-quantity">Quantity: 02</span>
         </li>
   
         <li class="clearfix">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
-          <span class="item-name">Kindle, 6" Glare-Free To...</span>
-          <span class="item-price">$129.99</span>
+          <img src="https://lojavivara.vtexassets.com/arquivos/ids/360754/Brinco-Ouro-Rose-e-Rodolitas-72951_set.jpg?v=1772841413" alt="item1" class="cart-item"/>
+          <span class="item-name">Brinco Ouro Rosé e Rodolitas</span>
+          <span class="item-price">R$ 690,00</span>
           <span class="item-quantity">Quantity: 01</span>
         </li>
       </ul>
@@ -165,37 +165,34 @@
       <div class="offcanvas-header shopping-cart-header">
         <div class="shopping-cart-total">
           <span class="">Total:</span>
-          <span class="">$2,229.97</span>
+          <span class="">R$ 5.776,00</span>
         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body">
-        <ul class="shopping-cart-items">
-          <li class="clearfix">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
-            <span class="item-name">Sony DSC-RX100M III</span>
-            <span class="item-price">$849.99</span>
-            <span class="item-quantity">Quantity: 01</span>
-          </li>
-    
-          <li class="clearfix">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
-            <span class="item-name">KS Automatic Mechanic...</span>
-            <span class="item-price">$1,249.99</span>
-            <span class="item-quantity">Quantity: 02</span>
-          </li>
-    
-          <li class="clearfix">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
-            <span class="item-name">Kindle, 6" Glare-Free To...</span>
-            <span class="item-price">$129.99</span>
-            <span class="item-quantity">Quantity: 01</span>
+      <ul class="shopping-cart-items">
+        <li class="clearfix">
+          <img src="https://lojavivara.vtexassets.com/arquivos/ids/305579/Anel-Prata-e-Quartzo-Negro-m4960344_set.jpg?v=1772757969" alt="item1" class="cart-item"/>
+          <span class="item-name">Anel Prata e Quartzo Negro</span>
+          <span class="item-price">R$ 750,00</span>
+          <span class="item-quantity">Quantity: 01</span>
+        </li>
+  
+        <li class="clearfix">
+          <img src="https://pandorajoias.vtexassets.com/arquivos/ids/187856-800-auto?v=637789027673070000&width=800&height=auto&aspect=true" alt="item1" class="cart-item"/>
+          <span class="item-name">Coracao E Asas Shine</span>
+          <span class="item-price">R$ 4.336,00</span>
+          <span class="item-quantity">Quantity: 02</span>
+        </li>
+  
+        <li class="clearfix">
+          <img src="https://lojavivara.vtexassets.com/arquivos/ids/360754/Brinco-Ouro-Rose-e-Rodolitas-72951_set.jpg?v=1772841413" alt="item1" class="cart-item"/>
+          <span class="item-name">Brinco Ouro Rosé e Rodolitas</span>
+          <span class="item-price">R$ 690,00</span>
+          <span class="item-quantity">Quantity: 01</span>
           </li>
         </ul>
         <a href="#" class="button">Checkout</a>
-    </div> <!--end shopping-cart -->
-  </div>
-  <footer class="footer-section">
+    </div>
+  <footer class="footer-section footer-relative">
     <div class="footer-container container-md">
       <div class="footer-div footer-div-1">
         <span class="footer-span">CANAIS OFICIAIS</span>
