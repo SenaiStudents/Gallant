@@ -102,6 +102,10 @@ body {
 .border-right {
     border-right: 1px solid #ffffff11;
 }
+.nav-position {
+    position: sticky;
+    top: 0;
+}
 @media screen and (max-width: 420px) {
     .offcanvas.offcanvas-end {
         width: 50%;
@@ -124,11 +128,14 @@ body {
     margin: 65px 0;
     background: rgba(49, 49, 49, 0.689);
     width: 320px;
-    position: relative;
+    position: fixed;
     float: right;
     border-radius: 4px;
     padding: 20px;
     color: #fff;
+    z-index: 10;
+    top: 20px;
+    right: 10vw;
 }
 .shopping-cart-header {
     border-bottom: 1px solid #E8E8E8;
@@ -173,7 +180,6 @@ body {
 	border-width: 8px;
 	margin-left: -8px;
 }
-
 .cart-icon {
   color: #515783;
   font-size: 24px;
@@ -198,6 +204,11 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+.cart-item {
+    object-fit: cover;
+    width: 60px;
+    height: auto;
 }
 /* Header */
 header {
@@ -577,17 +588,33 @@ header h2 {
     margin-left: 0px;
     opacity: 1;
 }
-
 /* Jewelry */
 .nav-dark-theme {
     background-color: #070707;
-    margin-top: -5px;
 }
-
-
-
-
-
+.shop-section {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+.shop-section-div {
+    margin: 0 auto;
+}
+.carousel-item {
+    height: 600px;
+}
+.carousel-img {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 90vw;
+}
+.carousel-inner {
+    border-radius: 16px;
+}
+.card-div-item {
+    height: 420px;
+}
 /* Watch */
 
 
